@@ -10,7 +10,7 @@ visualize_ratio                         : 0.75
 is_viewpoint_extend                     : true
 is_multi_layer                          : false
 is_opencv_visual                        : false # Obstalce Image Display
-is_static_env                           : true
+is_static_env                           : false
 is_pub_boundary                         : false
 is_debug_output                         : false
 is_attempt_autoswitch                   : true  # Auto switch to attemptable navigation

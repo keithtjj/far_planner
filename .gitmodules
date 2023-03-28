@@ -1,0 +1,6 @@
+[submodule "multi_ugv_add_ons"]
+	path = src/multi_ugv_add_ons
+	url = https://github.com/keithtjj/multi_ugv_add_ons.git
+[submodule "yolov7-ros"]
+	path = src/yolov7-ros
+	url = https://github.com/keithtjj/yolov7-ros.git

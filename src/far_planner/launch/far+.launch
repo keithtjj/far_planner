@@ -17,10 +17,11 @@
     <include file="$(find graph_decoder)/launch/decoder.launch" />
     
     <!-- Python Script to Launch Beahviour Nodes -->
-    <node pkg="multi_ugv_add_ons" type="navi.py" name="navi" output="screen" cwd="node"/>
-    <node pkg="multi_ugv_add_ons" type="killer.py" name="killer" output="screen"/>
+    <node pkg="multi_ugv_behaviours" type="navi.py" name="navi" output="screen" cwd="node"/>
+    <node pkg="multi_ugv_behaviours" type="killer.py" name="killer" output="screen"/>
     
     <!-- Launch MQTT ROS Bridge Node -->
+    <arg name="use_tls" default="false" />
     <node name="mqtt_bridge" pkg="mqtt_bridge" type="mqtt_bridge_node.py" output="screen" respawn="true">
         <rosparam command="load" file="$(find mqtt_bridge)/config/la_params.yaml" />
         <rosparam if="$(arg use_tls)" command="load" ns="mqtt" file="$(find mqtt_bridge)/config/tls_params.yaml" />

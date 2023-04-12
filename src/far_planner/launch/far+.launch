@@ -27,4 +27,11 @@
         <rosparam if="$(arg use_tls)" command="load" ns="mqtt" file="$(find mqtt_bridge)/config/tls_params.yaml" />
     </node>
     
+    <!-- Python Script to Launch Vehicle Creation Node -->
+    <node pkg="vehicle_creation" type="creation_node.py" name="vehicle_manager" output="screen"/>
+    <!-- Python Script to Launch Availability publish Node -->
+    <node pkg="vehicle_creation" type="availability_pub.py" name="availability_publisher" output="screen"/>
+    <!-- Python Script to Launch Priority publish Node -->
+    <node pkg="vehicle_creation" type="priority_pub.py" name="priority_publisher" output="screen"/>
+    
 </launch>

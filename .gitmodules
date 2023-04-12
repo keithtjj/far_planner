@@ -7,3 +7,6 @@
 [submodule "mqtt_bridge"]
 	path = src/mqtt_bridge
 	url = https://github.com/keithtjj/mqtt_bridge.git
+[submodule "vehicle_creation"]
+	path = src/vehicle_creation
+	url = https://github.com/keithtjj/vehicle_creation.git

@@ -17,8 +17,8 @@
     <include file="$(find graph_decoder)/launch/decoder.launch" />
     
     <!-- Python Script to Launch Beahviour Nodes -->
-    <node pkg="multi_ugv_behaviours" type="navi.py" name="navi" output="screen" cwd="node"/>
-    <node pkg="multi_ugv_behaviours" type="killer.py" name="killer" output="screen"/>
+    <node pkg="multi_ugv_behaviours" type="navi.py" name="navi" output="screen" respawn="true"/>
+    <node pkg="multi_ugv_behaviours" type="killer.py" name="killer" output="screen" respawn="true"/>
     
     <!-- Launch MQTT ROS Bridge Node -->
     <arg name="use_tls" default="false" />

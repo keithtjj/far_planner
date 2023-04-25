@@ -19,6 +19,7 @@
     <!-- Python Script to Launch Beahviour Nodes -->
     <node pkg="multi_ugv_behaviours" type="navi.py" name="navi" output="screen" respawn="true"/>
     <node pkg="multi_ugv_behaviours" type="follower.py" name="follow" output="screen" respawn="true"/>
+    <node pkg="yolov7_ros" type="detector.py" name="yolo" output="screen" respawn="true"/>
     
     <!-- Launch MQTT ROS Bridge Node -->
     <arg name="use_tls" default="false" />

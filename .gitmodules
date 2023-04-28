@@ -1,9 +1,9 @@
-[submodule "multi_ugv_add_ons"]
+[submodule "multi_ugv_behaviours"]
 	path = src/multi_ugv_behaviours
 	url = https://github.com/keithtjj/multi_ugv_behaviours.git
-[submodule "yolov7-ros"]
+[submodule "yolov7_ros"]
 	path = src/yolov7_ros
-	url = https://github.com/keithtjj/yolov7-ros.git
+	url = https://github.com/keithtjj/yolov7_ros.git
 [submodule "mqtt_bridge"]
 	path = src/mqtt_bridge
 	url = https://github.com/keithtjj/mqtt_bridge.git

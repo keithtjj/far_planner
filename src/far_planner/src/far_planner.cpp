@@ -20,7 +20,7 @@ void FARMaster::Init() {
   terrain_local_sub_  = nh.subscribe("/terrain_local_cloud", 1, &FARMaster::TerrainLocalCallBack, this);
   joy_command_sub_    = nh.subscribe("/joy", 5, &FARMaster::JoyCommandCallBack, this);
   update_command_sub_ = nh.subscribe("/update_visibility_graph", 5, &FARMaster::UpdateCommandCallBack, this);
-  goal_pub_           = nh.advertise<geometry_msgs::PointStamped>("/way_point",5);
+  goal_pub_           = nh.advertise<geometry_msgs::PointStamped>("/far_way_point",5);
   boundary_pub_       = nh.advertise<geometry_msgs::PolygonStamped>("/navigation_boundary",5);
   // Timers
   runtime_pub_        = nh.advertise<std_msgs::Float32>("/runtime",1);

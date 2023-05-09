@@ -29,10 +29,10 @@
     </node>
     
     <!-- Python Script to Launch Vehicle Creation Node -->
-    <node pkg="vehicle_creation" type="creation_node.py" name="vehicle_manager" output="screen"/>
+    <node pkg="vehicle_creation" type="creation_node.py" name="vehicle_manager" output="screen" respawn="true"/>
     <!-- Python Script to Launch Availability publish Node -->
-    <node pkg="vehicle_creation" type="availability_pub.py" name="availability_publisher" output="screen"/>
+    <node pkg="vehicle_creation" type="availability_pub.py" name="availability_publisher" output="screen" respawn="true"/>
     <!-- Python Script to Launch Priority publish Node -->
-    <node pkg="vehicle_creation" type="priority_pub.py" name="priority_publisher" output="screen"/>
-    
+    <node pkg="vehicle_creation" type="priority_pub.py" name="priority_publisher" output="screen" respawn="true"/>
+     
 </launch>

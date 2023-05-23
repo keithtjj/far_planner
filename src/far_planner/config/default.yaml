@@ -7,7 +7,7 @@ sensor_range                            : 30.0  # Unit: meter
 terrain_range                           : 15.0  # Unit: meter
 local_planner_range                     : 5.0   # Unit: meter
 visualize_ratio                         : 0.75
-is_viewpoint_extend                     : true
+is_viewpoint_extend                     : false
 is_multi_layer                          : false
 is_opencv_visual                        : false # Obstalce Image Display
 is_static_env                           : false

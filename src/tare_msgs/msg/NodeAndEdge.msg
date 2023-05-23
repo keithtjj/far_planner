@@ -1,0 +1,6 @@
+geometry_msgs/Point position
+int32 node_ind
+int32 keypose_id
+bool is_keypose
+int32 connected_node_ind
+float32 connected_node_dist
